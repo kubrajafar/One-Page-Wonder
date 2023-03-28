@@ -1,0 +1,35 @@
+nav{
+    div{
+        a{
+            background-color: none;
+            border:none;
+            color:rgb(173, 147, 149);
+            font-size: 15px;
+            padding: 10px;
+            font-Weight: 600;
+            cursor: pointer;
+            transition: 0.5s;
+            &:hover{
+                color: rgb(230, 214, 214);
+            }
+        }
+    }
+}
+header{
+    button{
+        width:220px;
+        border: none;
+        background-color: rgb(238, 9, 121);
+        border-radius: 40px;
+        color:$colorWhite;
+        letter-spacing: 1px;
+        margin-top: 45px;
+        padding: 25px;
+        font-weight: 700;
+        transition: 1s;
+        cursor: pointer;
+        &:hover{
+            background-color: #be0761;
+        }
+    }
+}

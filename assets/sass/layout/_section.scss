@@ -1,0 +1,68 @@
+main {
+  padding-top: 60px;
+}
+section {
+  @include displayFlex(space-between);
+  width: 80%;
+  margin: auto;
+  padding: 0 30px;
+  margin-bottom: 60px;
+  @media screen and (max-width: 1000px) {
+    flex-direction: column;
+    padding: 0 15px;
+  }
+
+  img {
+    @include size(400px, 400px);
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    @media screen and (max-width: 1000px) {
+      @include size(530px, 530px);
+      margin-bottom: 50px;
+    }
+    @media screen and (max-width: 780px) {
+      @include size(350px, 350px);
+    }
+  }
+  .content {
+    width: 50%;
+    margin-right: 65px;
+    @media screen and (max-width: 1000px) {
+      width: 80%;
+      margin-right: 0;
+    }
+  }
+  .content_second {
+    width: 50%;
+    margin-left: 65px;
+    @media screen and (max-width: 1000px) {
+      width: 80%;
+      margin-left: 0;
+    }
+  }
+  h2 {
+    color: rgb(33, 37, 41);
+    font-size: 55px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    line-height: 1.2;
+    @media screen and (max-width: 1000px) {
+      font-size: 45px;
+      margin: 35px 0;
+    }
+    @media screen and (max-width: 780px) {
+      font-size: 35px;
+      margin: 15px 0;
+    }
+  }
+  p {
+    font-size: 16px;
+  }
+}
+#section_about,
+#section_rock {
+  flex-direction: row-reverse;
+  @media screen and (max-width: 1000px) {
+    flex-direction: column;
+  }
+}

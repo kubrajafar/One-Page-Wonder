@@ -1,0 +1,27 @@
+header {
+  @include displayFlex(center, column);
+  padding: 170px 80px;
+  width: 100%;
+  background: linear-gradient(0deg, #ff6a00 0%, #ee0979 100%);
+  @media screen and (max-width: 1000px) {
+    padding: 140px 0;
+  }
+  h1 {
+    font-size: 90px;
+    color: $colorWhite;
+    font-weight: 800;
+    text-align: center;
+    line-height: 70px;
+    @media screen and (max-width: 1000px) {
+      font-size: 60px;
+    }
+  }
+  h2 {
+    font-size: 45px;
+    color: $colorWhite;
+    font-weight: 800;
+    @media screen and (max-width: 1000px) {
+      font-size: 30px;
+    }
+  }
+}

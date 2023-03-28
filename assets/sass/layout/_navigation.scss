@@ -1,0 +1,14 @@
+nav {
+  @include size(100%, 75px);
+  @include displayFlex(space-around);
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.7);
+  div {
+    h2 {
+      font-size: 16px;
+      color: $colorWhite;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+  }
+}
